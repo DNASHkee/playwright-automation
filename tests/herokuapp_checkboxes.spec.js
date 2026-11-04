@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-test("TC001 - Herokuapp/checkboxes elso checkbox mukodese", async ({
+test("TC001 - Verify that the first checkbox is initially unchecked and can be checked", async ({
   page,
 }) => {
   const pageOpen = page.goto("https://the-internet.herokuapp.com/checkboxes");
@@ -11,7 +11,7 @@ test("TC001 - Herokuapp/checkboxes elso checkbox mukodese", async ({
   await expect(checkBoxShow).toBeChecked();
 });
 
-test("TC002 - Herokuapp/checkboxes masodik checkbox mukodese", async ({
+test("TC002 - Verify that the second checkbox is visible and checked by default", async ({
   page,
 }) => {
   const pageOpen = page.goto("https://the-internet.herokuapp.com/checkboxes");

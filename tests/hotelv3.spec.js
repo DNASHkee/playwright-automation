@@ -1,7 +1,7 @@
-// - - - - - - - - ELSO TESZT - - - - - - - - - -
+// - - - - - - - - TC001 - - - - - - - - - -
 import { test, expect } from "@playwright/test";
 
-test("TC001 - Ellenorzom a megnezem a teljes listat gomb letezik-e es mukodik e a kattintas", async ({
+test("TC001 - Verify that the 'View Full List' button is visible and clickable", async ({
   page,
 }) => {
   await page.goto("http://hotel-v3.progmasters.hu/");
@@ -12,8 +12,8 @@ test("TC001 - Ellenorzom a megnezem a teljes listat gomb letezik-e es mukodik e 
   await buttonShow.click();
 });
 
-// - - - - - - - - MASODIK TESZT - - - - - - - - - -
-test("TC002 - Vizsgalom a megnezem a teljes listat gom kattintasra at navigal e", async ({
+// - - - - - - - - TC002 - - - - - - - - - -
+test("TC002 - Verify navigation to the hotel list page after clicking the 'View Full List' button", async ({
   page,
 }) => {
   await page.goto("http://hotel-v3.progmasters.hu");
